@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
       <header>
-        <a id="logo" href="/index.html">ToDoNotes</h1>
+
+        <div id="logo"><a href="/index.html">ToDoNotes</a>
+        </div>
         <nav>
           <ul>
           <li><a href="/index.html">Home</a></li>
@@ -21,26 +22,29 @@
           <ul>
         </nav>
       </header>
-    </div>
-    <div id="content">
-    <div>
-      Enter Notes:<br />
+    <main id="content">
+    <section>
       <form>
-        <label for="title">Title</label>
-        <input type="text" name="title" id="title" /><br />
-        <label for="text">Note</label>
-        <textarea type="text" name="text" id="text"></textarea>
+        <label>Enter Note...</label> <br>
+        <div class="input">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title" /><br>
+        </div>
+        <div class="input">
+        <label for="text">Note:</label>
+        <textarea type="text" name="text" id="text" rows="3" cols="5"></textarea><br>
+        </div>
         <button type="button" id="sendbtn">Send</button>
       </form>
-    </div>
-    <div id="posts">
+    </section>
+    <section id="posts">
       <!-- <div class="post">
         <div class="post-header">
         <img class="post-del"src="images/trash.png" alt="">
         </div>
         <div class="post-scrollable">test post</div>
     </div> -->
-    </div>
-  </div>
+  </section>
+  </main>
   </body>
 </html>
